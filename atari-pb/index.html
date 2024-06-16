@@ -1,0 +1,194 @@
+
+<!DOCTYPE html>
+<html>
+
+<style>
+    .row {
+        margin-bottom: 40px; /* Add 20 pixels of space below each row */
+        font-size: 16px;
+    }
+    
+    li { 
+        margin-bottom: 5px;  
+    }
+ </style>
+
+
+<head lang="en">
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-T43R3ZGG');</script>
+    <!-- End Google Tag Manager -->
+    
+    <meta charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <title>Atari-PB</title>
+
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta property="og:image" content="https://jonbarron.info/zipnerf/img/nottingham.jpg">
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:image:width" content="1296">
+    <meta property="og:image:height" content="840">
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://i-am-proto.github.io/ataripb/"/>
+    <meta property="og:title" content="Investigating Pre-Training Objectives for Generalization in Vision-Based Reinforcement Learning" />
+    <meta property="og:description" content="Recently, various pre-training methods have been introduced in vision-based Reinforcement Learning (RL). However, their generalization ability remains unclear due to evaluations being limited to in-distribution environments and non-unified experimental setups. To address this, we introduce the Atari Pre-training Benchmark (Atari-PB), which pre-trains a ResNet-50 model on 10 million transitions from 50 Atari games and evaluates it across diverse environment distributions. Our experiments show that pre-training objectives focused on learning task-agnostic features (e.g., identifying objects and understanding temporal dynamics) enhance generalization across different environments. In contrast, objectives focused on learning task-specific knowledge (e.g., identifying agents and fitting reward functions) improve performance in environments similar to the pre-training dataset but not in varied ones. We publicize our codes, datasets, and model checkpoints at https://github.com/dojeon-ai/Atari-PB." />
+
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%220.95em%22 font-size=%2280%22>👾</text></svg>">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.8.0/codemirror.min.css">
+    <link rel="stylesheet" href="css/app.css">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.8.0/codemirror.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.5.3/clipboard.min.js"></script>
+</head>
+
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T43R3ZGG"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+<body>
+    <div class="container" id="main">
+        <div class="row">
+            <h1 class="col-md-12 text-center" style="font-size:45px;">
+                Investigating Pre-Training Objectives for Generalization </br> in Vision-Based Reinforcement Learning</br> 
+                <small>
+                ICML 2024
+                </small>
+            </h1>
+        </div>
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <ul class="list-inline">
+                    <li>
+                        <a href="https://i-am-proto.github.io/">
+                        Donghu Kim*
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://joonleesky.github.io/">
+                        Hojoon Lee*
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://kyungminn.github.io/">
+                        Kyungmin Lee*
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://godnpeter.github.io/">
+                        Dongyoon Hwang
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://sites.google.com/site/jaegulchoo/">
+                        Jaegul Choo
+                        </a>
+                    </li>
+                    </br>KAIST
+                </ul>
+            </div>
+        </div>
+
+
+        <div class="row">
+                <div class="col-md-4 col-md-offset-4 text-center">
+                    <ul class="nav nav-pills nav-justified">
+                        <li>
+                            <a href="https://arxiv.org/abs/2406.06037">
+                            <image src="img/arxiv.png" height="60px">
+                                <h4><strong>arXiv</strong></h4>
+                            </a>
+                        </li>
+                        <!-- <li>
+                            <a href="https://neurips.cc/virtual/2023/poster/72467">
+                            <image src="img/youtube_icon.png" height="60px">
+                                <h4><strong>Video</strong></h4>
+                            </a>
+                        </li> -->
+                        <li>
+                            <a href="https://github.com/dojeon-ai/atari-pb">
+                            <image src="img/github.png" height="60px">
+                                <h4><strong>Github</strong></h4>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+        </div>
+
+        <div class="row"; style="box-sizing:content-box; width:80%; background-color:#eeeeee; margin:0 auto; margin-top:50px; margin-bottom:50px;">
+        <!-- <div class="row" style="box-sizing:content-box; width:100vw; position:relative; margin-left:-50vw; left:50%; background-color:#eeeeee; padding-bottom:20px; padding-top:10px"> -->
+            <h2 class="text-center"><b><u>Takeaways</u></b></h2>
+            <div class="col-md-12 col-md-offset-0" style="font-size:20px; text-align:justify">
+                <ul style="margin-left:-15px; margin-bottom:20px">
+                    <li style="margin-top: 10px; margin-bottom: 20px">
+                        Learning <b>task-agnostic features</b> consistently improve generalization across various distribution shifts. (e.g., identifying objects from images, understanding temporal dynamics from videos)
+                    </li>    
+                    <li>Learning <b>task-specific features</b> improve performance in similar tasks <b>but</b> lose effectiveness as task distribution shifts increase. (e.g., focusing on agents from demonstrations and fitting the reward function from trajectories)</li>
+                </ul>
+            </div>
+        </br>
+        </div>
+        
+        <div class="row">
+            <div style="box-sizing:content-box; width:100vw; position:relative; margin-left:-50vw; left:50%; padding-bottom:20px; padding-top:10px; text-align: center;">
+                <image src="img/summary_figure.png" height="250px">
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <h2 class="text-center"> <u>Abstract</u></h2>
+                <p style="text-align: justify;">
+                Recently, various pre-training methods have been introduced in vision-based Reinforcement Learning (RL). However, their generalization ability remains unclear due to evaluations being limited to in-distribution environments and non-unified experimental setups. To address this, we introduce the Atari Pre-training Benchmark (Atari-PB), which pre-trains a ResNet-50 model on 10 million transitions from 50 Atari games and evaluates it across diverse environment distributions.
+                Our experiments show that pre-training objectives focused on learning task-agnostic features (e.g., identifying objects and understanding temporal dynamics) enhance generalization across different environments. In contrast, objectives focused on learning task-specific knowledge (e.g., identifying agents and fitting reward functions) improve performance in environments similar to the pre-training dataset but not in varied ones. We publicize our codes, datasets, and model checkpoints at
+                <a href="https://github.com/dojeon-ai/Atari-PB">https://github.com/dojeon-ai/Atari-PB</a>.
+                </p>
+            </div>
+        </div>
+
+        <div class="row">
+            <h2 class="text-center"><u>Atari-PB Overview</u></h2>
+            <div class="col-md-8 col-md-offset-2">
+                <ul style="margin-left:-15px">
+                    <li><b>12 pre-training algorithms</b> that use 4 different data types: Image, Video, Demonstration, Trajectory. </li>    
+                    <li><b>3 environment distributions</b>: ID (50 games), Near-OOD (10 games), Far-OOD (5 games). </li>    
+                    <li>A <b>ResNet-50</b> model is pre-trained on a <b>10M</b> pre-training dataset for 100 epochs, then fine-tuned/evaluated on each environment distribution. </li>    
+                </ul>
+            </div>
+            <div class="col-md-8 col-md-offset-2 text-center">
+                <image src="img/overview.png" height="300px">
+            </div>
+        </div>
+
+        <div class="row">
+            <h2 class="text-center"><u>Results and Observations</u></h2>
+            <div class="col-md-8 col-md-offset-2">
+                <ul style="margin-left:-15px; margin-bottom:60px">
+                    <li>O1: Learning <b>task-agnostic information (Image, Video)</b> significantly enhances performance across ID, Near-OOD, and Far-OOD environments.</li>
+                    <li>O2: Learning <b>task-relevant information (Demonstration)</b> further enhances ID and Near-OOD performance, but only marginally for Far-OOD.</li>
+                    <li>O3: Learning <b>reward-specific information (Trajectory)</b> yields best ID performance, while it shows limited generalization in Near-OOD and Far-OOD environments.</li>
+                    <li>O4: Effective adaptation in one fine-tuning scenario correlates to effective adaptation in the other.</li>
+                </ul>
+            </div>
+            <div style="box-sizing:content-box; width:100vw; position:relative; margin-left:-50vw; left:50%; padding-bottom:20px; padding-top:10px; text-align: center;">
+                <image src="img/main_figure.png" height="500px">
+            </div>
+        </div>
+
+        
+</body>
+</html>
