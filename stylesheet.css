@@ -232,3 +232,36 @@ span.highlight {
       padding-bottom: 10px;
     }
   }
+
+
+.publication-filter {
+  display: block;
+  margin-left: 10px;
+  margin-top: 5px;
+  font-size: 15px;
+}
+.filter-btn {
+  background: none;
+  border: none;
+  color: #1772d0;
+  cursor: pointer;
+  text-decoration: none;
+  padding: 0 0px;
+  font-family: inherit;
+  font-size: inherit;
+}
+.filter-btn:hover {
+  text-decoration: none;
+  color: orange;
+}
+.filter-btn.active {
+  color: #1772d0;
+  font-weight: bold;
+  font-size: inherit;
+}
+.publication-entry {
+  transition: opacity 0.3s ease, height 0.3s ease;
+}
+.publication-entry.hidden {
+  display: none;
+}
