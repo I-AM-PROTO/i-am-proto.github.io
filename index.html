@@ -51,27 +51,23 @@
         </p>
 
         </p>
-        <p> My name is Donghu Kim. I am on a Master's Degree program in KAIST (advised by
-          <a href="https://sites.google.com/site/jaegulchoo/">Jaegul Choo</a>),
-          studying reinforcement learning and embodied AI.
-          <!-- <a href="https://lee15253.github.io/">Byungkun Lee</a>, 
-          <a href="https://joonleesky.github.io/">Hojoon Lee</a>, 
-          <a href="https://godnpeter.github.io/">Dongyoon Hwang</a>, 
-          <a href="https://mynsng.github.io/">Hyunseung Kim</a>,
-          <a href="https://kyungminn.github.io/">Kyungmin Lee</a>, and
-          <a href="https://leeyngdo.github.io/">Youngdo Lee</a>. -->
+        <p>
+          My name is Donghu Kim. Currently I am a research scientist at
+          <a href="https://www.holiday-robotics.com">Holiday Robotics</a>,
+          where we are developing dexterous manipulation skills with RL in simulation.
         </p>
         
         <p>
-        Towards building a generalist robotic agent,
-        I am a huge believer that RL in simulated environments is inevitable, let it be low-level data generation
-        [<a href="https://arxiv.org/abs/2305.10455">1</a>, <a href="https://arxiv.org/abs/2412.09858">2</a>]
-        or post-training of large models.
-        In this direction, I am invested in pushing the absolute limit of
-        efficiency in RL for control: <strong>Can we make RL work with only 1K samples?
-        Can we do it within an hour?</strong>
-        As far fetched as the goal may seem, there are so many exciting components we can tackle,
-        including feature learning, exploration, architecture design, optimizer, and most interestingly, plasticity.
+          I received my Master's Degree in KAIST (advised by
+          <a href="https://sites.google.com/site/jaegulchoo/">Jaegul Choo</a>).
+          My study is based on the belief that RL in simulated environments is inevitable, let it be low-level data generation
+          [<a href="https://arxiv.org/abs/2305.10455">1</a>, <a href="https://arxiv.org/abs/2412.09858">2</a>]
+          or building a library of atomic skillsets [<a href="https://arxiv.org/abs/2603.22435">3</a>].
+          In this direction, I am invested in pushing the absolute limit of
+          efficiency in RL for control: <strong>Can we make RL work with only 1K samples?
+          Can we do it within an hour?</strong>
+          As far fetched as the goal may seem, there are so many exciting components we can tackle,
+          including feature learning, exploration, architecture design, optimizer.
         </p>
 
         <p>
@@ -83,7 +79,8 @@
           <a href="mailto:quagmire@kaist.ac.kr">Email</a> &nbsp/&nbsp
           <a href="CV.pdf">CV</a> &nbsp/&nbsp
           <a href="https://scholar.google.com/citations?user=LcYjQYcAAAAJ&hl=en">Google Scholar</a> &nbsp/&nbsp
-          <a href="https://github.com/i-am-proto/">Github</a>
+          <a href="https://www.linkedin.com/in/donghu-kim-3b57972b6/">LinkedIn</a> &nbsp/&nbsp
+          <a href="hsttps://github.com/i-am-proto/">Github</a>
         </p>
 
       </div>
@@ -97,35 +94,6 @@
 
   <div class="container">
     <div class="row section-heading-rows">
-      <h4>Work Experience</h4>
-    </div>
-
-    <!-------------------------------------------------------------->
-  <div class="row common-rows" style="margin-top:-15px;">
-    <div class="col-xs-12 col-sm-3 left-column">
-        <div style="width: 100%; height: 150px; background-color: #ffffff; display: flex; justify-content: center; align-items: center; border-radius: 0px;">
-              <img src="pictures/thumbs/krafton.png" alt="Krafton" style="max-width: 75%; max-height: 75%; object-fit: contain;">
-        </div>
-      </div>
-      <div class="col-xs-12 col-sm-9 right-column">
-        <div style="display: flex; justify-content: space-between; align-items: baseline;">
-          <strong style="font-size:18px;">Krafton AI</strong>
-          <span style="white-space: nowrap;">Jun 2025 - Sep 2025</span>
-        </div>
-        <div style="display: flex; justify-content: space-between; align-items: baseline; font-size:16px;">
-            Research Intern (Physical Intelligence Team)
-            <!-- <span style="white-space: nowrap;">Seattle, USA</span> -->
-        </div>
-        <ul style="margin-left:-1.5em; margin-top:0.5em;">
-        <li>Recreated company workplace in IsaacLab simulator</li>
-        <li>Developed a locomotion RL policy with Unitree G1 for navigation</li>
-        </ul>
-      </div>
-    </div>
-  </div>
-
-  <div class="container">
-    <div class="row section-heading-rows">
       <h4>Publications</h4>
       <span class="publication-filter">
         [ <a href="javascript:void(0)" class="filter-btn active" data-filter="selected">Selected </a>/
@@ -133,14 +101,98 @@
       </span>
     </div>
 
+  <!-------------------------------------------------------------->
+    
+    <div class="row common-rows selected-publication" style="margin-top: 0%">
+      <div class="col-xs-12 custom-col-sm-3 left-column">
+        <img src="pictures/thumbs/flashsac.png" alt="flashsac" class="paper-images">
+      </div>
+      <div class="col-xs-12 col-sm-9 right-column">
+        <br>
+            <papertitle>
+                FlashSAC: Fast and Stable Off-Policy RL for High-Dimensional Robot Control
+            </papertitle>
+        <br>
+        <strong>Donghu Kim*</strong>,
+        <a href="https://https://leeyngdo.github.io/">Youngdo Lee*</a>,
+        <a href="https://pmh9960.github.io/">Minho Park</a>,
+        <a href="https://kinam0252.github.io/">Kinam Kim</a>,
+        <a href="https://takuseno.github.io/">Takuma Seno</a>,
+        <a href="https://anahrendra.github.io/">Aswin Nahrendra</a>,
+        <a href="https://seiing.github.io/">Sehee Min</a>,
+        <a href="https://www.linkedin.com/in/danielpalenicek/">Daniel Palenicek</a>,
+        <a href="https://scholar.google.com/citations?user=PvEf33EAAAAJ">Florian Vogt</a>, 
+        <a href="https://www.csc.kth.se/~dani/">Danica Kragic</a>,
+        <a href="https://www.ias.informatik.tu-darmstadt.de/Member/JanPeters">Jan Peters</a>,
+        <a href="https://sites.google.com/site/jaegulchoo/">Jaegul Choo</a>,
+        <a href="https://joonleesky.github.io/">Hojoon Lee</a>.
+        <br>
+        <em>Preprint</b></em>.
+        <br>
+        <a href="https://arxiv.org/abs/2604.04539">arXiv</a> /
+        <a href="https://holiday-robot.github.io/FlashSAC/">project page</a> /
+        <a href="https://github.com/Holiday-Robot/FlashSAC">github</a> (⭐100+)
+        <br><br>
+      </div>
+    </div>
+
+  <!-------------------------------------------------------------->
+    
+    <div class="row common-rows selected-publication" style="margin-top: 0%">
+      <div class="col-xs-12 custom-col-sm-3 left-column">
+        <img src="pictures/thumbs/fire.png" alt="fire" class="paper-images" style="padding-left: 10%; padding-right: 10%">
+      </div>
+      <div class="col-xs-12 col-sm-9 right-column">
+        <br>
+            <papertitle>
+              FIRE: Frobenius-Isometry Reinitialization for Balancing Stability-Plasticity Tradeoff
+            </papertitle>
+        <br>
+        <a href="https://scholar.google.com/citations?user=ralPRksAAAAJ&hl=ko">Isaac Han</a>.
+        Sangyeon Park,
+        Seungwon Oh,
+        <strong>Donghu Kim</strong>,
+        <a href="https://joonleesky.github.io/">Hojoon Lee</a>,
+        <a href="https://cilab.gist.ac.kr/hp/">Kyungjoon Kim<sup>†</sup></a>.
+        <br>
+        <em>ICLR'26, <span style="color:#df340e">Oral</span>.</em>
+        <br>
+        <a href="https://arxiv.org/abs/2602.08040">arXiv</a> /
+        <a href="https://isaac7778.github.io/fire/">project page</a> /
+        <a href="https://github.com/isaac7778/FIRE">github</a>
+        <br><br>
+      </div>
+    </div>
+
+    <!-------------------------------------------------------------->
+    
+    <div class="row common-rows publication-entry" style="margin-top: 0%">
+      <div class="col-xs-12 custom-col-sm-3 left-column">
+        <img src="pictures/thumbs/dynamicmoe.png" alt="dynamicmoe" class="paper-images" style="padding-left: 20%; padding-right: 20%">
+      </div>
+      <div class="col-xs-12 col-sm-9 right-column">
+        <br>
+            <papertitle>
+              Dynamic Mixture of Experts Against Severe Distribution Shifts
+            </papertitle>
+        <br>
+        <strong>Donghu Kim</strong>
+        <br>
+        <em>Preprint.</em>
+        <br>
+        <a href="https://arxiv.org/abs/2511.18987">arXiv</a>
+        <br><br>
+      </div>
+    </div>
+
     <!-------------------------------------------------------------->
 
-    <div class="row common-rows publication-entry" style="margin-top: 3%">
+    <div class="row common-rows publication-entry" style="margin-top: 0%">
       <div class="col-xs-12 custom-col-sm-3 left-column">
         <img src="pictures/thumbs/toxchat.png" alt="toxchat" class="paper-images">
       </div>
       <div class="col-xs-12 col-sm-9 right-column">
-        <span style="background-color:#e3e3e3">LLM Agent</span>
+        <!-- <span style="background-color:#e3e3e3">LLM Agent</span> -->
         <br>
             <papertitle>
               Building Resource-Constrained Language Agents: A Korean Case Study on Chemical Toxicity Information
@@ -157,21 +209,21 @@
         <br>
         <a href="https://arxiv.org/abs/2503.17753">arXiv</a>
         <br><br>
-        <p style="margin-top: -1%;"> 
+        <!-- <p style="margin-top: -1%;"> 
             We build a light-weight LLM agent that answers chemical toxicity questions
             based on the Korean Tox-Info database.
-        </p>
+        </p> -->
       </div>
     </div>
 
   <!-------------------------------------------------------------->
     
-    <div class="row common-rows selected-publication" style="margin-top: 3%">
+    <div class="row common-rows selected-publication" style="margin-top: 0%">
       <div class="col-xs-12 custom-col-sm-3 left-column">
         <img src="pictures/thumbs/simbav2.png" alt="simbav2" class="paper-images">
       </div>
       <div class="col-xs-12 col-sm-9 right-column">
-        <span style="background-color:#e2c7e5">Reinforcement Learning</span>
+        <!-- <span style="background-color:#e2c7e5">Reinforcement Learning</span> -->
         <br>
             <papertitle>
                 SimBaV2: Hyperspherical Normalization for Scalable Deep Reinforcement Learning
@@ -190,21 +242,21 @@
         <a href="https://dojeon-ai.github.io/SimbaV2/">project page</a> /
         <a href="https://github.com/dojeon-ai/SimbaV2">github</a>
         <br><br>
-        <p style="margin-top: -1%;"> 
+        <!-- <p style="margin-top: -1%;"> 
             We further regularize SimBa architecture by projecting both parameters and features onto a hypersphere,
             leading to better scaling properties in model size and compute.
-        </p>
+        </p> -->
       </div>
     </div>
 
   <!-------------------------------------------------------------->
     
-    <div class="row common-rows selected-publication" style="margin-top: 3%">
+    <div class="row common-rows selected-publication" style="margin-top: 0%">
       <div class="col-xs-12 custom-col-sm-3 left-column">
         <img src="pictures/thumbs/simba.png" alt="simba" class="paper-images">
       </div>
       <div class="col-xs-12 col-sm-9 right-column">
-        <span style="background-color:#e2c7e5">Reinforcement Learning</span>
+        <!-- <span style="background-color:#e2c7e5">Reinforcement Learning</span> -->
         <br>
             <papertitle>
                 SimBa: Simplicity Bias for Scaling Up Parameters in Deep Reinforcement Learning
@@ -227,22 +279,22 @@
         <a href="https://sonyresearch.github.io/simba/">project page</a> /
         <a href="https://github.com/SonyResearch/simba">github</a>
         <br><br>
-        <p style="margin-top: -1%;"> 
+        <!-- <p style="margin-top: -1%;"> 
             We propose a well-regularized architecture that avoids overfitting,
             allowing parameter and compute scale up in RL.
-        </p>
+        </p> -->
       </div>
     </div>
 
   <!-------------------------------------------------------------->
 
-    <div class="row common-rows publication-entry" style="margin-top: 3%">
+    <div class="row common-rows publication-entry" style="margin-top: 0%">
         <div class="col-xs-12 custom-col-sm-3 left-column">
           <img src="pictures/thumbs/preprint2024dodont.png" alt="preprint2024dodont" class="paper-images">
       </div>
       <div class="col-xs-12 col-sm-9 right-column">
-        <span style="background-color:#e2c7e5">Reinforcement Learning</span>
-        <span style="background-color:#ff9aa2">Skill Discovery</span>
+        <!-- <span style="background-color:#e2c7e5">Reinforcement Learning</span>
+        <span style="background-color:#ff9aa2">Skill Discovery</span> -->
         <br>
             <papertitle>
                 Do’s and Don’ts: Learning Desirable Skills with Instruction Videos
@@ -260,20 +312,20 @@
         <a href="https://arxiv.org/abs/2406.00324">arXiv</a> /
         <a href="http://mynsng.github.io/dodont">project page</a>
         <br><br>
-        <p style="margin-top: -1%;"> 
+        <!-- <p style="margin-top: -1%;"> 
             We present DoDont, a skill discovery algorithm that learns diverse behaviors 
             while following the behaviors in "do" videos while avoiding the behaviors in "don't" videos.
-        </p>
+        </p> -->
       </div>
     </div>
 
-    <div class="row common-rows selected-publication" style="margin-top: 3%">
+    <div class="row common-rows publication-entry" style="margin-top: 0%">
       <div class="col-xs-12 custom-col-sm-3 left-column">
           <img src="pictures/thumbs/icml2024atari-pb.png" alt="icml2024atari-pb" class="paper-images">
       </div>
       <div class="col-xs-12 col-sm-9 right-column">
-        <span style="background-color:#e2c7e5">Reinforcement Learning</span>
-        <span style="background-color:#ffdac1">Pre-training</span>
+        <!-- <span style="background-color:#e2c7e5">Reinforcement Learning</span>
+        <span style="background-color:#ffdac1">Pre-training</span> -->
         <br>
           <papertitle>
             ATARI-PB: Investigating Pre-Training Objectives for Generalization in Pixel-Based RL
@@ -291,19 +343,19 @@
         <a href="https://github.com/dojeon-ai/Atari-PB">github</a> /
         <a href="https://icml.cc/media/PosterPDFs/ICML%202024/34150.png">poster</a>
         <br><br>
-        <p style="margin-top: -1%;"> 
+        <!-- <p style="margin-top: -1%;"> 
           We investigate which pre-training objectives are beneficial for in-distribution, near-out-of-distribution, and far-out-of-distribution generalization in visual reinforcement learning.
-        </p>
+        </p> -->
       </div>
     </div>
 
-    <div class="row common-rows publication-entry" style="margin-top: 3%">
+    <div class="row common-rows publication-entry" style="margin-top: 0%">
         <div class="col-xs-12 custom-col-sm-3 left-column">
           <img src="pictures/thumbs/icml2024hnt.png" alt="icml2024hnt" class="paper-images">
       </div>
       <div class="col-xs-12 col-sm-9 right-column">
-        <span style="background-color:#e2c7e5">Reinforcement Learning</span>
-        <span style="background-color:#b5ead7">Plasticity</span>
+        <!-- <span style="background-color:#e2c7e5">Reinforcement Learning</span>
+        <span style="background-color:#b5ead7">Plasticity</span> -->
         <br>
         <papertitle>
             Slow and Steady Wins the Race: Maintaining Plasticity with Hare and Tortoise Networks
@@ -322,12 +374,66 @@
         <a href="https://arxiv.org/abs/2406.02596">arXiv</a> /
         <a href="https://github.com/dojeon-ai/Hare-Tortoise">github</a>
         <br><br>
-        <p style="margin-top: -1%;"> 
+        <!-- <p style="margin-top: -1%;"> 
             To allow the network to continually adapt and generalize, we introduce Hare and Tortoise architecture, 
             inspired by the complementary learning system of the human brain.
-        </p>
+        </p> -->
       </div>
     </div>
+  </div>
+
+<br>
+
+  <div class="container">
+    <div class="row section-heading-rows">
+      <h4>Work Experience</h4>
+    </div>
+
+  <!-------------------------------------------------------------->
+  <div class="row common-rows" style="margin-top:-15px;">
+    <div class="col-xs-12 col-sm-3 left-column">
+        <div style="width: 100%; height: 150px; background-color: #ffffff; display: flex; justify-content: center; align-items: center; border-radius: 0px;">
+              <img src="pictures/thumbs/holiday_robotics.svg" alt="Holiday Robotics" style="max-width: 75%; max-height: 75%; object-fit: contain;">
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-9 right-column">
+        <div style="display: flex; justify-content: space-between; align-items: baseline;">
+          <strong style="font-size:18px;">Holiday Robotics</strong>
+          <span style="white-space: nowrap;">Jan 2026 - Present</span>
+        </div>
+        <div style="display: flex; justify-content: space-between; align-items: baseline; font-size:16px;">
+            AI Research Scientist
+            <!-- <span style="white-space: nowrap;">Seattle, USA</span> -->
+        </div>
+        <ul style="margin-left:-1.5em; margin-top:0.5em;">
+        <li>Dexterous manipulation via reinforcement learning</li>
+        </ul>
+    </div>
+  </div>
+
+  <!-------------------------------------------------------------->
+  <div class="row common-rows" style="margin-top:-15px;">
+    <div class="col-xs-12 col-sm-3 left-column">
+        <div style="width: 100%; height: 150px; background-color: #ffffff; display: flex; justify-content: center; align-items: center; border-radius: 0px;">
+              <img src="pictures/thumbs/krafton.png" alt="Krafton" style="max-width: 75%; max-height: 75%; object-fit: contain;">
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-9 right-column">
+        <div style="display: flex; justify-content: space-between; align-items: baseline;">
+          <strong style="font-size:18px;">Krafton AI</strong>
+          <span style="white-space: nowrap;">Jun 2025 - Sep 2025</span>
+        </div>
+        <div style="display: flex; justify-content: space-between; align-items: baseline; font-size:16px;">
+            Research Intern (Physical Intelligence Team)
+            <!-- <span style="white-space: nowrap;">Seattle, USA</span> -->
+        </div>
+        <ul style="margin-left:-1.5em; margin-top:0.5em;">
+        <li>Recreated company workplace in IsaacLab simulator</li>
+        <li>Developed a locomotion RL policy with Unitree G1 for navigation</li>
+        </ul>
+    </div>
+  </div>
+
   </div>
 
 </br>
@@ -382,8 +488,8 @@
     <div class="row" style="margin-top:-10px">
       <p>
         <ul>
-          <li> ICLR Reviewer (2025)
-          <li> NeurIPS Reviewer (2025)
+          <li> ICLR Reviewer (2025 - 2026)
+          <li> NeurIPS Reviewer (2025 - 2026)
         </ul>
       </p>
     </div>
